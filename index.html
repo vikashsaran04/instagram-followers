@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow - Istagram Folower Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="icon" href="fv.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .logo {
+            font-size: 24px;
+        }
+        nav {
+            display: none; /* Hidden by default */
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background: #444;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Grow</h1>
+        <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+        <nav id="menu">
+            <a href="#home-page">Home</a>
+            <a href="#order-page">Order</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <h2>Boost Your Iastegram Folowears Instantly!</h2>
+    <p>Choose from our affordable folower plans and grow your Iastegram presence today.</p>
+    <button onclick="document.getElementById('home-page').scrollIntoView();">View Plans</button>
+</section>
+
+   <title>30-Minute Countdown Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="timer-container">
+    <h2>Special Offer Ends In:</h2>
+    <div id="timer">30:00</div>
+  </div>
+
+  <script src="script.js"></script>
+    <main>
+  <!-- Product Section -->
+  <section class="product">
+    <div class="product-box">
+      <div class="offer-icon">
+        <i class="fas fa-tag"></i> Special Offer
+      </div>
+      <img src="verify.png" alt="Varification Tick" class="product-image">
+      <h3 class="product-name">Instagram Varification Tick</h3>
+      <div class="price">
+        <span class="original-price">₹650</span>
+        <span class="discounted-price">₹299</span>
+      </div>
+      <button class="buy-now" onclick="openPopup()">Buy Now</button>
+    </div>
+  </section>
+  <!-- Popup Window (Visible only on Home Page) -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img src="verify.png" alt="Varification Tick" class="popup-image">
+      <h3 class="popup-title">Instagram Varification Tick</h3>
+      <p class="popup-price">Price: <span>₹299</span></p>
+      <label for="username">Instagram Username:</label>
+      <input type="text" id="username" placeholder="Enter your Instagram username">
+      <button class="process">Process</button>
+    </div>
+  </div>
+        <!-- Home Page Content -->
+        <section id="home-page" class="page">
+            <h2>Followers Plans</h2>
+            <div class="package">
+                <h3>5k Folowers</h3>
+                <p>₹99 <span class="offer">(80% off)</span></p>
+                <button onclick="selectPlan(5000, 99)">Select Plan</button>
+            </div>
+            <div class="package">
+                <h3>10k Folowers</h3>
+                <p>₹180 <span class="offer">(75% off)</span></p>
+                <button onclick="selectPlan(10000, 180)">Select Plan</button>
+            </div>
+            <div class="package">
+                <h3>15k Folowers</h3>
+                <p>₹240 <span class="offer">(70% off)</span></p>
+                <button onclick="selectPlan(15000, 240)">Select Plan</button>
+            </div>
+            <div class="package">
+                <h3>20k Folowers</h3>
+                <p>₹280 <span class="offer">(65% off)</span></p>
+                <button onclick="selectPlan(20000, 280)">Select Plan</button>
+            </div>
+            <div class="package">
+                <h3>25k Folowers</h3>
+                <p>₹299 <span class="offer">(60% off)</span></p>
+                <button onclick="selectPlan(25000, 299)">Select Plan</button>
+            </div>
+
+            <!-- Reviews Section (Visible only on Home Page) -->
+            <section id="reviews" class="reviews-section">
+                <h2>Customer Comments</h2>
+                <div class="review-list">
+                    <div class="review">
+                        <p><strong>सोनल:</strong> ⭐⭐⭐⭐⭐ थैंक यू सर मुझे 5000 फॉलोअर मिल गए 25 मिनट के अंदर-अंदर</p>
+                    </div>
+                    <div class="review">
+                        <p><strong>Rahul bishnoi:</strong> ⭐⭐⭐⭐⭐ Sar mere ko 5000 folower mil Gaye vah bhi ekadam asali follower.</p>
+                    </div>
+                    <div class="review">
+                        <p><strong>कीर्तिका:</strong> ⭐⭐⭐⭐⭐ थैंक यू सर आपकी सर्विस मुझे बहुत अच्छी लगी.</p>
+                    </div>
+                    <div class="review">
+                        <p><strong>Vikash Verma:</strong> ⭐⭐⭐⭐⭐ Sar aapki service bahut acchi lagi Maine mere dost Ko bhi follow lene ke bare mein bataya</p>
+                    </div>
+                    <div class="review">
+                        <p><strong>Ravi choudhary:</strong> ⭐⭐⭐⭐⭐ Received folowers instantly, very happy with instaBoost.</p>
+                    </div>
+                </div>
+
+                <!-- Add Review Form (Visible only on Home Page) -->
+                <h3>Leave Your Review</h3>
+                <form class="review-form" onsubmit="addReview(event)">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                    
+                    <label for="rating">Rating:</label>
+                    <select id="rating">
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="1">⭐</option>
+                    </select>
+                    
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" rows="3" placeholder="Write your review here..." required></textarea>
+                    
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+        </section>
+
+        <!-- Order Page Content -->
+        <section id="order-page" class="page" style="display: none;">
+            <h2>Complete Your Order</h2>
+            <div id="selected-plan"></div>
+            <label for="instagram-id">Enter Your Instagram Username:</label>
+            <input type="text" id="instagram-id" placeholder="Instagram Username" required>
+            <div id="plan-display"></div>
+            <button onclick="confirmOrder()">Confirm Order</button>
+            <button onclick="goBack()">Back</button>
+        </section>
+    </main>
+
+   <div class="footer">
+  <p class="owners">Owned by <span>Vikash choudhary</span></p>
+  <p class="special-text">This offer is for a limited time so don't waste your time and select your deal on time</p>
+  <p>Follow us on <a href="https://wa.me/+918981346357?text=हेलो%20फॉलोअर्स%20टीम.%20मुझे%20आपसे%20मदद%20चाहिए" target="_blank">sapport teem</a></p>
+</div>
+
+    <script>
+        let selectedPlan = { followers: 0, price: 0, link: '' };
+
+        function selectPlan(followers, price) {
+            selectedPlan.followers = followers;
+            selectedPlan.price = price;
+
+            // Set payment link based on price
+            switch (price) {
+                case 99:
+                    selectedPlan.link = "https://razorpay.me/@onlinepayviki?amount=CVDUr6Uxp2FOGZGwAHntNg%3D%3D";
+                    break;
+                case 180:
+                    selectedPlan.link = "https://razorpay.me/@onlinepayviki?amount=ltgr7PVQFBh0tpoj%2B7RIyQ%3D%3D";
+                    break;
+                case 240:
+                    selectedPlan.link = "https://razorpay.me/@onlinepayviki?amount=pzYY4Tg2F0hstRphOkp86A%3D%3D";
+                    break;
+                case 280:
+                    selectedPlan.link = "https://razorpay.me/@onlinepayviki?amount=FDAhznEAngT%2FtioV5Z3g0A%3D%3D";
+                    break;
+                case 299:
+                    selectedPlan.link = "https://razorpay.me/@onlinepayviki?amount=kXxURMaXFk%2Bmrv%2B9uGrYpg%3D%3D";
+                    break;
+            }
+
+            document.getElementById('selected-plan').innerHTML = `<p><strong>${followers} Followers</strong> for ₹${price}</p>`;
+            document.getElementById('home-page').style.display = 'none';
+            document.getElementById('order-page').style.display = 'block';
+            document.getElementById('plan-display').innerHTML = `<p>Selected Plan: ${followers} Followers - ₹${price}</p>`;
+        }
+
+        function confirmOrder() {
+            const instagramId = document.getElementById('instagram-id').value;
+            if (instagramId) {
+                window.location.href = selectedPlan.link;
+            } else {
+                alert('Please enter your Instagram Username.');
+            }
+        }
+
+        function goBack() {
+            document.getElementById('order-page').style.display = 'none';
+            document.getElementById('home-page').style.display = 'block';
+        }
+
+        // Hide reviews section when on order page
+        window.addEventListener('load', function() {
+            if (window.location.hash === '#order-page') {
+                document.getElementById('reviews').style.display = 'none';
+            } else {
+                document.getElementById('reviews').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
